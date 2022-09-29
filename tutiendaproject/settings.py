@@ -55,7 +55,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
-    "https://tutienda-be.herokuapp.com/",
+    "https://tutienda-be.herokuapp.com",
     "http://127.0.0.1:8000"
 ]
 
