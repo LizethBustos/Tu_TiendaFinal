@@ -55,11 +55,20 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
-    "https://tutienda-fe.heroku.com/"
+    "https://tutienda-fe.herokuapp.com/",
+    "http://127.0.0.1:9000"
 ]
 
+#CORS_ALLOWED_ALL_ORIGINS = True
 
-#faltan rest framework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 
 AUTH_USER_MODEL = 'tutiendaapp.User'
