@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'tutiendaapp',
-    'corsheaders',
-
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -81,7 +81,6 @@ SIMPLE_JWT = {
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
 }
-
 
 AUTH_USER_MODEL = 'tutiendaapp.User'
 
@@ -164,4 +163,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 import django_heroku
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
