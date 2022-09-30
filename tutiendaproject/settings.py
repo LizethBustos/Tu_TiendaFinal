@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-kj5iu*vkki!w(9fz0m+oo!y^%3y)q-du@)ar9a(=myya$49vi&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["tutienda-be.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
