@@ -28,10 +28,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     nombres = models.CharField('Nombres', max_length=20)
     apellidos = models.CharField('Apellidos', max_length=20)
     email = models.EmailField('Email', max_length=30)
-    password = models.CharField('Contraseña', max_length=250)
+    password = models.CharField('Contraseña', max_length=500)
 
     def save(self, **kwargs):
-        some_salt = '3xcvxcv1548vfdsSDf'
+        some_salt = 'mMUj0DrIK6vgtdIYepkIxN'
         self.password = make_password(self.password, some_salt)
         super().save(**kwargs)
 
